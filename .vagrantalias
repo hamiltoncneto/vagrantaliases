@@ -1,0 +1,5 @@
+#Common alias for rails development
+
+alias vforeman="vagrant ssh -c 'cd /vagrant; foreman start'"
+alias vdbmigrate="vagrant ssh -c 'cd /vagrant; rake db:migrate'"
+alias vdbseed="vagrant ssh -c 'cd /vagrant; rake db:seed'"
