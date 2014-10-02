@@ -15,5 +15,8 @@ alias vdbconsole="vagrant ssh -c 'cd /vagrant; rails c'"
 #Rails Server
 alias vrailsserver="vagrant ssh -c 'cd /vagrant; rails s '"
 
+#Rspec
+alias vrspec="vagrant ssh -c 'cd /vagrant; rspec spec'"
+
 #Show development logs
 alias vlogs="vagrant ssh -c 'cd /vagrant; tail -f log/development.log '"
