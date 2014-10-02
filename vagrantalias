@@ -1,9 +1,13 @@
 #Common alias for rails development
 
+#setup gems
+alias vgemsetup="vagrant ssh -c 'cd /vagrant; bundle install'"
+
 #Start foreman
 alias vforeman="vagrant ssh -c 'cd /vagrant; foreman start'"
 
 #Rails db
+alias vdbcreate="vagrant ssh -c 'cd /vagrant; rake db:create'"
 alias vdbmigrate="vagrant ssh -c 'cd /vagrant; rake db:migrate'"
 alias vdbseed="vagrant ssh -c 'cd /vagrant; rake db:seed'"
 alias vdbconsole="vagrant ssh -c 'cd /vagrant; rails c'"
